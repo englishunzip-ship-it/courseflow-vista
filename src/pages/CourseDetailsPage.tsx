@@ -60,10 +60,6 @@ export default function CourseDetailsPage() {
               <BookOpen className="h-16 w-16 text-muted-foreground/20" />
             </div>
           )}
-          {/* Price badge */}
-          <div className="absolute bottom-4 right-4 px-4 py-2 rounded-xl bg-primary text-primary-foreground font-bold text-lg shadow-lg backdrop-blur-sm">
-            ৳{course.price}
-          </div>
         </div>
 
         {/* Title & CTA */}
