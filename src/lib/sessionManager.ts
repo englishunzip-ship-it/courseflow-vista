@@ -8,7 +8,7 @@ function generateSessionId(): string {
   return `${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
 }
 
-const SESSION_KEY = "darpan_session_id";
+const SESSION_KEY = "lms_session_id";
 
 export function getLocalSessionId(): string | null {
   return localStorage.getItem(SESSION_KEY);

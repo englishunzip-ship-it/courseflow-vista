@@ -1,7 +1,7 @@
 {
-  "name": "Darpan Academy",
-  "short_name": "Darpan Academy",
-  "description": "Darpan Academy - আপনার শিক্ষা সঙ্গী",
+  "name": "LMS",
+  "short_name": "LMS",
+  "description": "Learning Management System",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
