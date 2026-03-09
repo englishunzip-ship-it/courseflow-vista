@@ -5,7 +5,7 @@ import { AppSettings } from "@/types";
 
 const defaultSettings: AppSettings = {
   appName: "Darpan Academy",
-  appLogo: "",
+  appLogo: "/logo.jpg",
   youtubeChannel: "",
   googleDrive: "",
   paymentMethods: [],
