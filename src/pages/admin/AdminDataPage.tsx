@@ -31,7 +31,7 @@ export default function AdminDataPage() {
       const a = document.createElement("a");
       a.href = url;
       const label = cols.length === 1 ? cols[0] : "all";
-      a.download = `lms-${label}-${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `darpan-${label}-${new Date().toISOString().slice(0, 10)}.json`;
       a.click();
       URL.revokeObjectURL(url);
       toast.success("Data exported successfully");
