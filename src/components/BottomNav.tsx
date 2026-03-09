@@ -43,13 +43,15 @@ export function BottomNav({ onMoreClick }: Props) {
             </Link>
           );
         })}
-        <button
-          onClick={onMoreClick}
-          className="flex flex-col items-center gap-0.5 px-3 py-1 text-xs text-muted-foreground"
-        >
-          <MoreHorizontal className="h-5 w-5" />
-          <span>More</span>
-        </button>
+        {!isAdmin && (
+          <button
+            onClick={onMoreClick}
+            className="flex flex-col items-center gap-0.5 px-3 py-1 text-xs text-muted-foreground"
+          >
+            <MoreHorizontal className="h-5 w-5" />
+            <span>More</span>
+          </button>
+        )}
       </div>
     </nav>
   );

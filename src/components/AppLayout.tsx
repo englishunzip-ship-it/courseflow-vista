@@ -15,7 +15,7 @@ export function AppLayout() {
   const isMobile = useIsMobile();
   const { pathname } = useLocation();
 
-  // Show bottom nav: always on mobile, always for admin (desktop admin has sidebar but mobile needs it)
+  // Desktop user panel: no bottom nav. Admin panel: always bottom nav. Mobile: always bottom nav.
   const showBottomNav = isMobile || isAdmin;
 
   // Show desktop sidebar for user on non-video pages
