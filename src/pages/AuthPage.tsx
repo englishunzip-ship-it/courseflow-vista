@@ -257,10 +257,10 @@ export default function AuthPage() {
                   href="https://postimages.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity whitespace-nowrap"
+                  className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:text-primary/80 transition-colors bg-primary/5 hover:bg-primary/10 px-2.5 py-1.5 rounded-full border border-primary/10"
                 >
-                  <Link2 className="h-3.5 w-3.5" />
-                  Get URL
+                  <ExternalLink className="h-3 w-3" />
+                  ইমেজ URL নেই? PostImages.org থেকে আপলোড করুন
                 </a>
               </div>
             )}
