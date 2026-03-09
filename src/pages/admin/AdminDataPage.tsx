@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { Download, Upload } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 
-const COLLECTIONS = ["users", "courses", "videos", "settings", "enrollRequests"];
+const COLLECTIONS = ["users", "courses", "videos", "settings", "enrollRequests", "notifications"];
 
 export default function AdminDataPage() {
   const [exporting, setExporting] = useState<string | null>(null);
