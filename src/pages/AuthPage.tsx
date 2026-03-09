@@ -242,26 +242,28 @@ export default function AuthPage() {
               </div>
             ) : (
               <div className="space-y-1.5">
-                <div className="relative">
-                  <Image className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/50" />
-                  <input
-                    type="url"
-                    value={screenshotUrl}
-                    onChange={(e) => setScreenshotUrl(e.target.value)}
-                    placeholder="https://i.postimg.cc/..."
-                    className="w-full pl-9 pr-3 py-3 rounded-md bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all placeholder:text-muted-foreground/60"
-                  />
+                <div className="flex gap-2 items-center">
+                  <div className="relative flex-1 min-w-0">
+                    <Image className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/50" />
+                    <input
+                      type="url"
+                      value={screenshotUrl}
+                      onChange={(e) => setScreenshotUrl(e.target.value)}
+                      placeholder="https://i.postimg.cc/..."
+                      className="w-full pl-9 pr-3 py-3 rounded-md bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all placeholder:text-muted-foreground/60"
+                    />
+                  </div>
+                  <a
+                    href="https://postimages.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-3 text-xs font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity whitespace-nowrap flex-shrink-0"
+                  >
+                    <Link2 className="h-3.5 w-3.5" />
+                    Get URL
+                  </a>
                 </div>
                 {screenshotUrl && <ImagePreview file={null} url={screenshotUrl} size="md" />}
-                <a
-                  href="https://postimages.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:text-primary/80 transition-colors bg-primary/5 hover:bg-primary/10 px-2.5 py-1.5 rounded-full border border-primary/10"
-                >
-                  <ExternalLink className="h-3 w-3" />
-                  ইমেজ URL নেই? PostImages.org থেকে আপলোড করুন
-                </a>
               </div>
             )}
           </div>
